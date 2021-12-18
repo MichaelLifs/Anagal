@@ -19,27 +19,25 @@ export default function Footer() {
                 bgcolor="#242446"
                 color="#c6c4d8 "
             >
-                <Container maxWidth="lg">
+                <Container container justifyContent="center" maxWidth="lg">
                     <Grid container justifyContent="center" spacing={6}>
-                        <Grid item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
+                        <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
                             <img src={Contact} postition="center" alt="Contact.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
+                        <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
                             <img src={Support} postition="center" alt="Support.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
+                        <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
                             <img src={Updated} postition="center" alt="Updated.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
-                            <img src={More} postition="center" alt="Updated.js" height="100px" />
-                        </Grid>
+
 
                     </Grid>
 
-                    <Box textAlign="center" >
+                    <Box container justifyContent="center" textAlign="center" >
                         <img src={logo} alt="AnagalShop.js" height="155px" />
                     </Box>
-                    <Box textAlign="center" >
+                    <Box container justifyContent="center" textAlign="center" >
                         All rights reserved  Michael Lifshitz  ©  {new Date().getFullYear()}
                     </Box>
 
