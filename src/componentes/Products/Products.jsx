@@ -10,7 +10,7 @@ const Products = ({ products, onAddToCart }) => {
         <main container textAlign="center" className={classes.content}>
             <img justifyContent="center" src={logo} alt="Photobar.js" height="80%" width="100%" />
             <div className={classes.toolbar} />
-            <Grid container justifyContent="center" spacing={3}>
+            <Grid container justifyContent="center" spacing={9}>
                 {products.map((product) => (
                     <Grid item key={product.id} xs={12} sm={8} md={6} lg={4}>
                         <Pruduct product={product} onAddToCart={onAddToCart} />

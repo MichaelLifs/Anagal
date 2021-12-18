@@ -20,13 +20,13 @@ export default function Footer() {
             >
                 <Container maxWidth="lg">
                     <Grid container spacing={10}>
-                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                        <Grid item xs={1} sm={3} component={Link} to="/404" aria-label='404'>
                             <img src={Contact} postition="center" alt="Contact.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                        <Grid item xs={1} sm={3} component={Link} to="/404" aria-label='404'>
                             <img src={Support} postition="center" alt="Support.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                        <Grid item xs={1} sm={3} component={Link} to="/404" aria-label='404'>
                             <img src={Updated} postition="center" alt="Updated.js" height="100px" />
                         </Grid>
                     </Grid>
