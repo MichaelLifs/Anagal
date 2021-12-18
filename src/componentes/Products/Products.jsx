@@ -7,8 +7,8 @@ import logo from '../../assets/photobar.jpg';
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
     return (
-        <main container textAlign="center" className={classes.content}>
-            <img justifyContent="center" src={logo} alt="Photobar.js" height="80%" width="100%" />
+        <main className={classes.content}>
+            <img src={logo} alt="Photobar.js" height="80%" width="100%" />
             <div className={classes.toolbar} />
             <Grid container justifyContent="center" spacing={9}>
                 {products.map((product) => (

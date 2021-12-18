@@ -19,7 +19,7 @@ export default function Footer() {
                 bgcolor="#242446"
                 color="#c6c4d8 "
             >
-                <Container container justifyContent="center" maxWidth="lg">
+                <Container maxWidth="lg">
                     <Grid container justifyContent="center" spacing={6}>
                         <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
                             <img src={Contact} postition="center" alt="Contact.js" height="100px" />
@@ -34,10 +34,10 @@ export default function Footer() {
 
                     </Grid>
 
-                    <Box container justifyContent="center" textAlign="center" >
+                    <Box justifyContent="center" textAlign="center" >
                         <img src={logo} alt="AnagalShop.js" height="155px" />
                     </Box>
-                    <Box container justifyContent="center" textAlign="center" >
+                    <Box justifyContent="center" textAlign="center" >
                         All rights reserved  Michael Lifshitz  ©  {new Date().getFullYear()}
                     </Box>
 

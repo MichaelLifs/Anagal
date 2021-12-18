@@ -14,15 +14,13 @@ const Cart = ({ cart, handleUpdateToCart, handleRemoveToCart, handleEmptyToCart 
 
 
     const EmptyCart = () => (
+        <Container maxWidth="lg">
+            <Grid container justifyContent="center" spacing={6}>
+                <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
+                    <img src={error} postition="center" alt="error.js" height="570px" />
+                </Grid>
 
-        <Container maxWidth="lg" component={Link} to="/" aria-label='home' >
-            <Box textAlign="center"  >
-                <IconButton component={Link} to="/" color="inherit" >
-                    <img src={error} alt="error.js" height="500px" />
-                </IconButton>
-
-            </Box>
-
+            </Grid>
         </Container>
     );
 

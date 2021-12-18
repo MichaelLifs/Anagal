@@ -2,26 +2,27 @@ import React from 'react';
 import error404 from '../../assets/404.jpg';
 import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
-import { Container, IconButton, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
+import Grid from '@material-ui/core/Grid';
 
 
 
 const Error = () => {
 
     return (
-        <Container>
-            <Typography textAlign="center" variant="h3" gutterBottom>404</Typography>
 
-            <Container maxWidth="lg" component={Link} to="/" aria-label='home' >
-                <Box textAlign="center"  >
-                    <IconButton component={Link} to="/" color="inherit" >
-                        <img src={error404} alt="error.js" height="500px" />
-                    </IconButton>
+        <Container maxWidth="lg">
+            <Grid container justifyContent="center" spacing={6}>
+                <Grid container justifyContent="center" item xs={12} sm={8} md={6} lg={4} component={Link} to="/404" aria-label='404'>
+                    <img src={error404} postition="center" alt="error.js" height="570px" />
+                </Grid>
 
-                </Box>
-            </Container>
-        </Container >
+            </Grid>
+        </Container>
+
     )
 };
 
 export default Error;
+
+
