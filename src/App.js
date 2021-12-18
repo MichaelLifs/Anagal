@@ -54,7 +54,6 @@ const App = () => {
 
 
 
-    console.log(cart);
 
 
     return (
