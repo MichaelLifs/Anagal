@@ -74,9 +74,7 @@ const App = () => {
                             handleEmptyToCart={handleEmptyToCart}
                         />}
                     </Route>
-                    <Route exact path="/404">
-                        {<Error />}
-                    </Route>
+
                 </Switch>
                 <Footer />
             </div >

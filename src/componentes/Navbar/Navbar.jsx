@@ -30,10 +30,10 @@ const Navbar = ({ totalItems }) => {
 
 
                     <div className={classes.button} >
-                        <IconButton component={Link} to="/404" aria-label='Search' color="inherit" >
+                        <IconButton component={Link} to="/" aria-label='Search' color="inherit" >
                             <SearchIcon />
                         </IconButton>
-                        <IconButton component={Link} to="/404" aria-label='Profile' color="inherit"  >
+                        <IconButton component={Link} to="/" aria-label='Profile' color="inherit"  >
                             <AccountCircle />
                         </IconButton>
                         <IconButton component={Link} to="/cart" aria-label='Show Card Items' color="inherit" >

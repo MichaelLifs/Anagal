@@ -1,7 +1,6 @@
 import React from 'react';
 import error404 from '../../assets/404.jpg';
-import { Link } from 'react-router-dom';
-import { Container, Typography } from '@mui/material'
+
 import Grid from '@material-ui/core/Grid';
 
 
