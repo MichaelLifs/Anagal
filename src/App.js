@@ -59,7 +59,7 @@ const App = () => {
 
     return (
 
-        <Router>
+        <Router basename='/Anagal'>
             <div>
                 <Navbar totalItems={cart.total_items} />
                 <Switch>
