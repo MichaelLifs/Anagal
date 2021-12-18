@@ -8,9 +8,9 @@ const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
     return (
         <main item xs={12} sm={4} className={classes.content}>
-
-            <div className={classes.toolbar} />
             <img src={logo} alt="Photobar.js" height="80%" width="100%" />
+            <div className={classes.toolbar} />
+
             <Grid container justifyContent="center" spacing={9}>
                 {products.map((product) => (
                     <Grid item key={product.id} xs={12} sm={8} md={6} lg={4}>

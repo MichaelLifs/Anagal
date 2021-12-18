@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/Anagal/static/js/main.f5fa9a9a.js",
+    "main.js": "/Anagal/static/js/main.5090d3f4.js",
     "static/media/photobar.jpg": "/Anagal/static/media/photobar.266e84bff9dcb4181e1e.jpg",
     "static/media/404.jpg": "/Anagal/static/media/404.c14143cd0a3e40c441cd.jpg",
     "static/media/logo.jpg": "/Anagal/static/media/logo.fd66390ee71aede93e61.jpg",
     "static/media/error.jpg": "/Anagal/static/media/error.56c4c1386e54866927c3.jpg",
     "index.html": "/Anagal/index.html",
-    "main.f5fa9a9a.js.map": "/Anagal/static/js/main.f5fa9a9a.js.map"
+    "main.5090d3f4.js.map": "/Anagal/static/js/main.5090d3f4.js.map"
   },
   "entrypoints": [
-    "static/js/main.f5fa9a9a.js"
+    "static/js/main.5090d3f4.js"
   ]
 }

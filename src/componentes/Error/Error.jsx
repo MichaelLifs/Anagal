@@ -10,15 +10,11 @@ const Error = () => {
 
     return (
 
-        <Container item xs={12} sm={4} maxWidth="lg">
-            <Typography textAlign="center" variant="h3" gutterBottom> </Typography>
-            <Grid container justifyContent="center" spacing={6}>
-                <Grid container justifyContent="center" item xs={12} sm={8} component={Link} to="/404" aria-label='404'>
-                    <img src={error404} postition="center" alt="error.js" height="90%" />
-                </Grid>
-
+        <Grid container justifyContent="center" spacing={0}>
+            <Grid item justifyContent="center" xs={12} sm={10} md={8} lg={6}>
+                <img src={error404} postition="center" alt="error.js" height="90%" />
             </Grid>
-        </Container>
+        </Grid>
 
     )
 };
