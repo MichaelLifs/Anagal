@@ -1,9 +1,12 @@
-import { Container, Grid, Typography, Button } from '@mui/material'
+import { Container, Grid, Typography, Button, IconButton } from '@mui/material'
 import React from 'react';
 import useStyles from './styles';
 import CartItem from './Cartitem/Cartitem';
-import { Link, } from 'react-router-dom'
-import error from '../../assets/404.png';
+import { Link } from 'react-router-dom';
+import error from '../../assets/error.jpg';
+import Box from '@material-ui/core/Box';
+
+
 
 const Cart = ({ cart, handleUpdateToCart, handleRemoveToCart, handleEmptyToCart }) => {
 
@@ -12,9 +15,15 @@ const Cart = ({ cart, handleUpdateToCart, handleRemoveToCart, handleEmptyToCart 
 
     const EmptyCart = () => (
 
-        <Typography component={Link} to="/"  >
-            <img src={error} alt="erros.js" height="80%" width="100%" />
-        </Typography >
+        <Container maxWidth="lg" component={Link} to="/" aria-label='home' >
+            <Box textAlign="center"  >
+                <IconButton component={Link} to="/" color="inherit" >
+                    <img src={error} alt="error.js" height="500px" />
+                </IconButton>
+
+            </Box>
+
+        </Container>
     );
 
 

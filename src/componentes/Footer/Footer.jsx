@@ -1,79 +1,45 @@
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/Logo2.jpg';
+import Contact from '../../assets/Contact Us.jpg';
+import Support from '../../assets/Support.jpg';
+import Updated from '../../assets/Updated.jpg';
+import { Link } from 'react-router-dom';
+
+
 
 export default function Footer() {
     return (
         <footer>
             <Box
-                px={{ xs: 3, sm: 10 }}
-                py={{ xs: 5, sm: 10 }}
-                bgcolor="#4654e8 "
-                color="white"
+                px={{ xs: 2, sm: 2 }}
+                py={{ xs: 2, sm: 2 }}
+                bgcolor="#242446"
+                color="#c6c4d8 "
             >
                 <Container maxWidth="lg">
-                    <Grid container spacing={5}>
-                        <Grid item xs={12} sm={4}>
-                            <Box border={1}>Store</Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Abut store
-                                </Link>
-                            </Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Support
-                                </Link>
-                            </Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Privacy
-                                </Link>
-                            </Box>
+                    <Grid container spacing={10}>
+                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                            <img src={Contact} postition="center" alt="Contact.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Account</Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Login
-                                </Link>
-                            </Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Register
-                                </Link>
-                            </Box>
+                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                            <img src={Support} postition="center" alt="Support.js" height="100px" />
                         </Grid>
-                        <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Messages</Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Backup
-                                </Link>
-                            </Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    History
-                                </Link>
-                            </Box>
-                            <Box>
-                                <Link href="/" color="inherit">
-                                    Roll
-                                </Link>
-                            </Box>
+                        <Grid item xs={12} sm={4} component={Link} to="/404" aria-label='404'>
+                            <img src={Updated} postition="center" alt="Updated.js" height="100px" />
                         </Grid>
                     </Grid>
-                    <Box textAlign="center" >
-                        <img src={logo} alt="AnagalShop.js" height="55px" />
 
+                    <Box textAlign="center" >
+                        <img src={logo} alt="AnagalShop.js" height="155px" />
                     </Box>
                     <Box textAlign="center" >
-                        Michael Lifshitz  &reg; {new Date().getFullYear()}
+                        All rights reserved  Michael Lifshitz  ©  {new Date().getFullYear()}
                     </Box>
+
                 </Container>
             </Box>
-        </footer>
+        </footer >
     );
 }
